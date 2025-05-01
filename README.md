@@ -29,20 +29,27 @@
         
         git clone https://github.com/Anwarullah5/voting-app.git
 
-3. Download and install [Ganache](https://trufflesuite.com/ganache/).
+3. Install Ganache from here and create a workspace named development. Add the project’s truffle-config.js file to this workspace.
 
-4. Create a workspace named <b>developement</b>, in the truffle projects section add `truffle-config.js` by clicking `ADD PROJECT` button.
+4. Install MetaMask, create a wallet (or import one), then import Ganache accounts.
 
-5. Download [Metamask](https://metamask.io/download/) extension for the browser.
+5. Configure MetaMask Network:
 
-6. Now create wallet (if you don't have one), then import accounts from ganache.
+Network Name: Localhost 7575
 
-7. Add network to the metamask. ( Network name - Localhost 7575, RPC URl - http://localhost:7545, Chain ID - 1337, Currency symbol - ETH)
+RPC URL: http://localhost:7545
 
-8. Open MySQL and create database named <b>voter_db</b>. (DON'T USE XAMPP)
+Chain ID: 1337
 
-9. In the database created, create new table named <b>voters</b> in the given format and add some values.
+Currency Symbol: ETH
 
+6. MySQL Setup:
+
+Launch MySQL (avoid using XAMPP).
+
+Create a new database named voter_db.
+
+Run the following SQL to create the voters table:
            CREATE TABLE voters (
            voter_id VARCHAR(36) PRIMARY KEY NOT NULL,
            role ENUM('admin', 'user') NOT NULL,
@@ -68,9 +75,9 @@
 
         pip install fastapi mysql-connector-python pydantic python-dotenv uvicorn uvicorn[standard] PyJWT
 
-## Usage
+## Running the Appliocation
 
-#### Note: Update the database credentials in the `./Database_API/.env` file.
+#### Note: Update the database credentials in the `./Database_API/.env` file as this one is public .
 
 1. Open terminal at the project directory
 
@@ -104,7 +111,7 @@
         truffle migrate
 
 You're all set! The Voting app should be up and running now at http://localhost:8080/.<br>
-For more info about usage checkout [YouTube video](https://www.youtube.com/watch?v=a5CJ70D2P-E).
+
 
 ## Code Structure
 
