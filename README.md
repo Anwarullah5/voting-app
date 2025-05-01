@@ -17,8 +17,7 @@
 - MySQL Database (port – 3306)
 ## Screenshots
 
-![Login Page](https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/login%20ss.png)
-
+![Login Page](https://github.com/Anwarullah5/voting-app/blob/eb216c79fea8a9a812fee8d7d51929332874c486/public/admin%20ss%20(1).png)
 ![Admin Page](https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/admin%20ss.png)
 
 ![Voter Page](https://github.com/Krish-Depani/Decentralized-Voting-System-Using-Ethereum-Blockchain/blob/main/public/index%20ss.png)
